@@ -78,7 +78,7 @@ namespace appGUI
                 int index = random.Next(AppsCombo.Items.Count);
                 AppClass selectedApp = (AppClass)AppsCombo.Items[index];
 
-                AppsCombo.Text = selectedApp.appName;
+                AppsCombo.SelectedIndex = index;
                 VersionNumber.Content = selectedApp.currentVer;
                 ContentRateName.Content = selectedApp.ContentRating.ContentRatingName;
                 ReviewLbl.Content = selectedApp.Reviews;
